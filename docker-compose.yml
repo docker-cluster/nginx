@@ -1,0 +1,12 @@
+version: "3"
+services:
+  ego-nginx:
+    restart: always
+    image: nginx:1.13
+    container_name: ego-nginx
+    ports:
+      - 30080:80
+      - 30443:443
+    volumes:
+      - ./conf/nginx.conf:/etc/nginx/conf.d/nginx.conf
+      - ./log:/var/log/nginx
