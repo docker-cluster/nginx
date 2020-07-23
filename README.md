@@ -13,7 +13,12 @@
 目录结构：
 
 ``` bash
-
+ego-nginx
+├── conf
+│   └── nginx.conf
+├── docker-compose.yml
+├── README.md
+└── setup.sh
 ```
 
 ## 部署
